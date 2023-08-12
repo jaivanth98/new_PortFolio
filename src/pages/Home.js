@@ -4,19 +4,24 @@ import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import "../styles/Home.css";
 import resume from "../assets/Resume.pdf"
+import Canvas from "../components/CanvasComp"
 
 function Home() {
   return (
-    <div className="home">
+    <>
+   
+      <div className="home">
+      <Canvas ></Canvas>
       <div className="about">
-        <h2> Hi, My Name is <sapn className="highlight_name">Jaivanth</sapn></h2>
+        <h2> Hi, I am<sapn className="highlight_name">{" "}Jaivanth</sapn></h2>
         <div className="prompt">
           <p>A software developer with a passion for learning and creating.</p>
           <LinkedInIcon />
           <EmailIcon />
           <GithubIcon />
         </div>
-        <a   href={resume}
+        <a   
+        href={resume}
         download="Jaivanth React Resume"
         target="_blank"
         rel="noreferrer">
@@ -41,6 +46,8 @@ function Home() {
         </ol>
       </div>
     </div>
+    </>
+  
   );
 }
 
