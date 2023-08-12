@@ -22,8 +22,8 @@ const ParticleEffect = () => {
         this.radius = 3;
         this.x = this.radius + Math.random() * (this.effect.width - this.radius * 2);
         this.y = this.radius + Math.random() * (this.effect.height - this.radius * 2);
-        this.vx = Math.random() * 3 - 1;
-        this.vy = Math.random() * 3 - 1;
+        this.vx = Math.random() * 2 - 0.6;
+        this.vy = Math.random() * 2 - 0.6;
       }
       draw(context) {
         context.beginPath();

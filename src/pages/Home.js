@@ -11,7 +11,7 @@ function Home() {
     <>
    
       <div className="home">
-      <Canvas ></Canvas>
+      <Canvas></Canvas>
       <div className="about">
         <h2> Hi, I am<sapn className="highlight_name">{" "}Jaivanth</sapn></h2>
         <div className="prompt">
