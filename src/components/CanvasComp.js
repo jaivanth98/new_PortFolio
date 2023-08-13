@@ -19,11 +19,11 @@ const ParticleEffect = () => {
     class Particle {
       constructor(effect) {
         this.effect = effect;
-        this.radius = 3;
+        this.radius = 1;
         this.x = this.radius + Math.random() * (this.effect.width - this.radius * 2);
         this.y = this.radius + Math.random() * (this.effect.height - this.radius * 2);
-        this.vx = Math.random() * 2 - 0.6;
-        this.vy = Math.random() * 2 - 0.6;
+        this.vx = Math.random() * 1;
+        this.vy = Math.random() * 1;
       }
       draw(context) {
         context.beginPath();
@@ -44,7 +44,7 @@ const ParticleEffect = () => {
         this.width = this.canvas.width;
         this.height = this.canvas.height;
         this.particles = [];
-        this.numberOfParticles = 600;
+        this.numberOfParticles = 300;
         this.createParticles();
       }
       createParticles() {
